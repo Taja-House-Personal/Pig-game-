@@ -1,3 +1,5 @@
+
+
 var scores, roundScore, activePlayer, gamePlaying;
 
 init ();
@@ -19,8 +21,10 @@ diceDOM.src = 'dice-' + dice + '.png';
 if (dice !== 1){
     roundScore += dice;//add score
     document.querySelector('#current-' + activePlayer).textContent = roundScore;
+   
 } else {
     //next player
+     alert('You rolled a 1! Next player!');
     nextPlayer();
 }
     }
